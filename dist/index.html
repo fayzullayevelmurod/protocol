@@ -9,17 +9,20 @@
     <style></style>
   </head>
   <body>
-    <main class="flex">
-      <div
-        class="sidebar w-[390px] h-[100vh] sticky top-0 left-0 bg-[white] border-r-[1px] border-[rgba(24, 24, 27, 0.08)] px-[24px] py-[16px]"
-      >
-        <div class="logo">
-          <img src="../img/protocol-logo.svg" alt="" />
+    <main class="grid grid-cols-[320px_auto]">
+      <div class="sidebar">
+        <div
+          class="sidebar-wrapper fixed w-[320px] h-[100%] top-0 bottom-0 left-0 bg-[white] border-r-[1px] border-[rgba(24, 24, 27, 0.08)] px-[24px] py-[16px]"
+        >
+          <div class="logo">
+            <img src="../img/protocol-logo.svg" alt="" />
+          </div>
         </div>
       </div>
+
       <div class="right w-[100%]">
         <header
-          class="header flex items-center h-[60px] leading-[28px] backdrop-filter backdrop-blur-[2px] flex justify-between border-b-[1px] border-[rgba(24, 24, 27, 0.08)] bg-[rgba(255,_255,_255,_0.5)] sticky top-0 px-[32px] [h-60px] font-['Roboto']"
+          class="header flex items-center justify-between sticky top-0 left-0 h-[60px] px-[32px] leading-[28px] backdrop-filter backdrop-blur-[2px] border-b-[1px] border-[rgba(24, 24, 27, 0.08)] bg-[rgba(255,_255,_255,_0.5)] font-['Roboto']"
         >
           <div
             class="search-bar w-[448px] h-[33px] flex items-center px-[11px] h-[32px] bg-[white] rounded-full border-[1px] border-[solid] border-[#e8e8e9]"
@@ -64,9 +67,9 @@
           </div>
         </header>
         <div
-          class="content max-w-[1280px] px-[80px] mx-auto -mt-[60px] h-[400px] bg-[url(../img/home-bg-2.png)] bg-no-repeat bg-[center_top_1px]"
+          class="content max-w-[1280px] px-[2rem] mx-auto -mt-[60px] h-[400px] bg-[url(../img/home-bg-2.png)] bg-no-repeat bg-[center_top_1px]"
         >
-          <div class="home pt-[120px]">
+          <div class="home pt-[120px] max-w-[1056px] mx-auto">
             <div class="home-text max-w-[793px]">
               <h2 class="text-[24px] text-[#18181B] font-[700]">
                 API Documentation
@@ -105,7 +108,7 @@
               </p>
               <a
                 href="#"
-                class="mt-[37px] text-[#10B981] text-[14px] flex items-center gap-[5px]"
+                class="mt-[30px] text-[#10B981] text-[14px] font-[500] flex items-center gap-[5px]"
                 >Get your API key
                 <svg
                   class="mt-[3px]"
@@ -120,9 +123,120 @@
                     stroke="#10B981"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                  /></svg></a>
-              <div class="guides">
-                    
+                  /></svg
+              ></a>
+            </div>
+            <div class="guides py-[73px]">
+              <h3
+                class="pb-[20px] text-[18px] font-[600] border-b-[1px] border-[rgba(24, 24, 27, 0.05)]"
+              >
+                Guides
+              </h3>
+              <div
+                class="cards mt-[40px] grid grid-cols-[auto_auto_auto_auto] gap-[20px]"
+              >
+                <div class="card">
+                  <h4 class="text-[14px] font-[600]">Authentication</h4>
+                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                    Learn how to authenticate your API requests.
+                  </p>
+                  <a
+                    href="#"
+                    class="flex items-center mt-[27px] text-[#10B981] text-[14px]"
+                    >Read more
+                    <svg
+                      class="mt-[3px]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="20"
+                      viewBox="0 0 17 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M11.7798 6.5L14.7798 10M14.7798 10L11.7798 13.5M14.7798 10H5.77979"
+                        stroke="#10B981"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                  ></a>
+                </div>
+                <div class="card">
+                  <h4 class="text-[14px] font-[600]">Pagination</h4>
+                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                    Understand how to work with paginated responses.
+                  </p>
+                  <a
+                    href="#"
+                    class="flex items-center mt-[27px] text-[#10B981] text-[14px]"
+                    >Read more
+                    <svg
+                      class="mt-[3px]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="20"
+                      viewBox="0 0 17 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M11.7798 6.5L14.7798 10M14.7798 10L11.7798 13.5M14.7798 10H5.77979"
+                        stroke="#10B981"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                  ></a>
+                </div>
+                <div class="card">
+                  <h4 class="text-[14px] font-[600]">Errors</h4>
+                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                    Read about the different types of errors returned by the
+                    API.
+                  </p>
+                  <a
+                    href="#"
+                    class="flex items-center mt-[27px] text-[#10B981] text-[14px]"
+                    >Read more
+                    <svg
+                      class="mt-[3px]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="20"
+                      viewBox="0 0 17 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M11.7798 6.5L14.7798 10M14.7798 10L11.7798 13.5M14.7798 10H5.77979"
+                        stroke="#10B981"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                  ></a>
+                </div>
+                <div class="card">
+                  <h4 class="text-[14px] font-[600]">Webhooks</h4>
+                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                    Learn how to programmatically configure webhooks for your
+                    app.
+                  </p>
+                  <a
+                    href="#"
+                    class="flex items-center mt-[27px] text-[#10B981] text-[14px]"
+                    >Read more
+                    <svg
+                      class="mt-[3px]"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="20"
+                      viewBox="0 0 17 20"
+                      fill="none"
+                    >
+                      <path
+                        d="M11.7798 6.5L14.7798 10M14.7798 10L11.7798 13.5M14.7798 10H5.77979"
+                        stroke="#10B981"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      /></svg
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
