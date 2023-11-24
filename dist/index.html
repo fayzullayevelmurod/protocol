@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="./fonts/Roboto/stylesheet.css" />
+    <style></style>
+  </head>
+  <body>
+    <main class="flex">
+      <div
+        class="sidebar w-[390px] h-[100vh] sticky top-0 left-0 bg-[white] border-r-[1px] border-[rgba(24, 24, 27, 0.08)] px-[24px] py-[16px]"
+      >
+        <div class="logo">
+          <img src="../img/protocol-logo.svg" alt="" />
+        </div>
+      </div>
+      <div class="right w-[100%]">
+        <header
+          class="header flex items-center h-[60px] leading-[28px] backdrop-filter backdrop-blur-[2px] flex justify-between border-b-[1px] border-[rgba(24, 24, 27, 0.08)] bg-[rgba(255,_255,_255,_0.5)] sticky top-0 px-[32px] [h-60px] font-['Roboto']"
+        >
+          <div
+            class="search-bar w-[448px] h-[33px] flex items-center px-[11px] h-[32px] bg-[white] rounded-full border-[1px] border-[solid] border-[#e8e8e9]"
+          >
+            <img
+              src="../img/icons/search-icon.svg"
+              alt=""
+              class="mr-[12px] w-[12px] h-[12px]"
+            />
+            <input
+              type="text"
+              placeholder="Find something..."
+              class="w-[90%] text-[14px] outline-none placeholder:Roboto placeholder:text-[13.9px] text-[#71717A]"
+            />
+            <span
+              class="text-[12px] text-[#A1A1AA] font-[400] whitespace-nowrap"
+              >Ctrl K</span
+            >
+          </div>
+          <div class="right-items flex items-center">
+            <ul
+              class="header-links flex items-center mr-[19px] text-[14px] text-[#52525B] font-[400] gap-[30px] border-r-[1px] border-[rgba(24, 24, 27, 0.1)] after:content-[''] after:border"
+            >
+              <li><a href="#">API</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+            <div class="header-buttons flex items-center gap-[21px]">
+              <div class="theme">
+                <img
+                  src="../img/icons/light-icon.svg"
+                  alt=""
+                  class="w-[20px] h-[20px]"
+                />
+              </div>
+              <button
+                class="px-[12px] h-[32px] bg-[#18181B] text-[white] text-[14px] rounded-[9999px]"
+              >
+                Sign in
+              </button>
+            </div>
+          </div>
+        </header>
+        <div
+          class="content max-w-[1280px] px-[80px] mx-auto -mt-[60px] h-[400px] bg-[url(../img/home-bg-2.png)] bg-no-repeat bg-[center_top_1px]"
+        >
+          <div class="home pt-[120px]">
+            <div class="home-text max-w-[793px]">
+              <h2 class="text-[24px] text-[#18181B] font-[700]">
+                API Documentation
+              </h2>
+              <p class="text-[15px] font-[400] text-[#3F3F46] mt-[14px]">
+                Use the Protocol API to access contacts, conversations, group
+                messages, and more and seamlessly integrate your product into
+                the workflows of dozens of devoted Protocol users.
+              </p>
+              <div class="buttons mt-[30px] flex items-center gap-[12px]">
+                <button
+                  class="px-[12px] h-[32px] flex items-center bg-[#18181B] text-[white] text-[14px] font-[500] rounded-[9999px]"
+                >
+                  Quickstart
+                  <img
+                    src="../img/icons/right-icon.svg"
+                    class="ml-[7px]"
+                    alt=""
+                  />
+                </button>
+                <button
+                  class="px-[12px] h-[32px] text-[14px] font-[500] rounded-[9999px] border-[1px] border-[#C8DCD6]"
+                >
+                  Explore SDKs
+                </button>
+              </div>
+              <h3 class="mt-[64px] text-[18px] font-[600]">Getting started</h3>
+              <p class="mt-[14px] text-[15px] font-[400] leading-[28px]">
+                To get started, create a new application in your
+                <a href="#" class="text-[#10B981]">developer settings</a>, then
+                read about how to make requests for the resources you need to
+                access using our HTTP APIs or dedicated client SDKs. When your
+                integration is ready to go live, publish it to our
+                <a href="#" class="text-[#10B981]">integrations directory</a>
+                to reach the Protocol community.
+              </p>
+              <a
+                href="#"
+                class="mt-[37px] text-[#10B981] text-[14px] flex items-center gap-[5px]"
+                >Get your API key
+                <svg
+                  class="mt-[3px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="17"
+                  height="20"
+                  viewBox="0 0 17 20"
+                  fill="none"
+                >
+                  <path
+                    d="M11.7798 6.5L14.7798 10M14.7798 10L11.7798 13.5M14.7798 10H5.77979"
+                    stroke="#10B981"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  /></svg></a>
+              <div class="guides">
+                    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
