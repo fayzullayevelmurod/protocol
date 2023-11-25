@@ -7,15 +7,58 @@
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="./fonts/Roboto/stylesheet.css" />
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      .resources-card {
+        background-image: url(./imgs/card-bg-img.svg);
+        background-size: cover;
+        background-position-y: -100px;
+        background-position-x: -50px;
+        border-radius: 16px;
+        box-shadow: 0px 0px 0px 1px rgba(24, 24, 27, 0.08) inset,
+          0px 0px 0px 0px #fff inset;
+      }
+    </style>
   </head>
   <body>
     <main class="grid grid-cols-[320px_auto] font-['Roboto']">
-      <div class="sidebar">
+      <div class="sidebar scroll-smooth">
         <div
-          class="sidebar-wrapper fixed w-[320px] h-[100%] top-0 bottom-0 left-0 bg-[white] border-r-[1px] border-[rgba(24, 24, 27, 0.08)] px-[24px] py-[16px]"
+          class="sidebar-wrapper fixed w-[320px] h-[100%] top-0 bottom-0 left-0 bg-white border-r-[1px] border-[rgba(24, 24, 27, 0.08)] px-4 py-4"
         >
           <div class="logo">
-            <img src="../img/protocol-logo.svg" alt="" />
+            <img
+              src="./imgs/protocol-logo.svg"
+              alt=""
+              class="max-w-full h-auto"
+            />
+          </div>
+          <h1 class="mt-10 font-semibold text-[#18181B]">Guides</h1>
+          <div class="sidebar-content mt-[12px]">
+            <ul>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="accordion-trigger cursor-pointer flex items-center justify-between px-2 py-1 rounded-md hover:bg-gray-200"
+                >
+                  Introduction
+                </a>
+                <div class="accordion-content hidden pl-2">
+                  <p class="ml-7 mt-2 text-[#52525B]">Guides</p>
+                  <p class="ml-7 mt-2 text-[#52525B]">Resources</p>
+                </div>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#"
+                  class="accordion-trigger cursor-pointer flex items-center justify-between px-2 py-1 rounded-md hover:bg-gray-200"
+                >
+                  Guides
+                </a>
+                <div class="accordion-content hidden pl-2">
+                  <p>Guides content goes here.</p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -28,7 +71,7 @@
             class="search-bar w-[448px] h-[33px] flex items-center px-[11px] bg-[white] rounded-full border-[1px] border-[solid] border-[#e8e8e9]"
           >
             <img
-              src="../img/icons/search-icon.svg"
+              src="./imgs/icons/search-icon.svg"
               alt=""
               class="mr-[12px] w-[12px] h-[12px]"
             />
@@ -44,7 +87,7 @@
           </div>
           <div class="right-items flex items-center">
             <ul
-              class="header-links flex items-center mr-[19px] text-[14px] text-[#52525B] font-[400] gap-[30px] border-r-[1px] border-[rgba(24, 24, 27, 0.1)] after:content-[''] after:border"
+              class="header-links flex items-center mr-[13px] text-[14px] text-[#52525B] font-[400] gap-[30px] border-r-[1px] border-[rgba(24, 24, 27, 0.1)] after:content-[''] after:border"
             >
               <li><a href="#">API</a></li>
               <li><a href="#">Documentation</a></li>
@@ -53,14 +96,7 @@
             <div class="header-buttons flex items-center gap-[21px]">
               <div class="light hover:bg-[#F3F3F3] cursor-pointer">
                 <img
-                  src="../img/icons/light-icon.svg"
-                  alt=""
-                  class="w-[20px] h-[20px]"
-                />
-              </div>
-              <div class="dark">
-                <img
-                  src="../img/icons/light-icon.svg"
+                  src="./imgs/icons/light-icon.svg"
                   alt=""
                   class="w-[20px] h-[20px]"
                 />
@@ -74,7 +110,7 @@
           </div>
         </header>
         <div
-          class="content max-w-[1280px] px-[2rem] -mt-[60px] mx-auto bg-[url(../img/home-bg-2.png)] bg-no-repeat bg-[center_top_1px]"
+          class="content max-w-[1280px] px-[2rem] -mt-[60px] mx-auto bg-[url(./imgs/home-bg-2.png)] bg-no-repeat bg-[center_top_1px]"
         >
           <div class="home pt-[120px] max-w-[1056px] mx-auto">
             <div class="home-text max-w-[793px]">
@@ -92,7 +128,7 @@
                 >
                   Quickstart
                   <img
-                    src="../img/icons/right-icon.svg"
+                    src="./imgs/icons/right-icon.svg"
                     class="ml-[7px]"
                     alt=""
                   />
@@ -133,15 +169,13 @@
                   /></svg
               ></a>
             </div>
-            <div class="guides pt-[73px]">
+            <div class="guides mt-[73px]">
               <h3
                 class="pb-[20px] text-[18px] font-[600] border-b-[1px] border-[rgba(24, 24, 27, 0.05)]"
               >
                 Guides
               </h3>
-              <div
-                class="cards mt-[40px] grid grid-cols-[auto_auto_auto_auto] gap-[20px]"
-              >
+              <div class="cards mt-[40px] grid grid-cols-4 gap-[20px]">
                 <div class="card">
                   <h4 class="text-[14px] font-[600]">Authentication</h4>
                   <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
@@ -246,74 +280,126 @@
                 </div>
               </div>
             </div>
-            <div class="lorem">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusamus porro quod vel ratione deserunt aspernatur, recusandae
-                eveniet rerum quae veniam, modi magni eos. Praesentium officiis,
-                soluta quisquam error at laudantium excepturi animi aspernatur
-                obcaecati. Numquam soluta recusandae totam rerum porro alias
-                laboriosam asperiores voluptate mollitia fugiat cupiditate
-                obcaecati unde fuga, eos, consectetur itaque dolore ipsa
-                reprehenderit sed doloremque rem qui esse voluptas! Tempora et
-                ullam eius soluta? Recusandae ducimus eligendi aut est quasi
-                asperiores quas? Eius culpa doloribus tempore, recusandae quis
-                porro reprehenderit ipsam suscipit! Dolores ad perspiciatis est
-                id accusamus possimus voluptatibus voluptates sapiente
-                aspernatur. Distinctio quaerat cum asperiores inventore, commodi
-                totam odit consequuntur. Temporibus, quaerat facilis cupiditate
-                laudantium consequatur beatae atque at magni, voluptatem
-                possimus minus impedit ipsam quis quos repellendus eligendi
-                nihil nemo provident quasi molestiae ab eveniet amet aspernatur.
-                Illum quae, sequi distinctio mollitia provident, ab totam soluta
-                quidem veniam rerum doloribus ullam quis. Voluptatem sit iusto
-                saepe itaque vel? Beatae fugit unde adipisci mollitia sed
-                laborum sit harum repellendus quidem ipsam quos aut optio, eaque
-                illo sapiente consectetur a voluptates ipsa, impedit aliquam
-                modi? Distinctio, quidem qui magnam odio veniam commodi labore
-                minima hic repellendus id in ipsum maxime sunt nulla! Esse
-                ducimus nesciunt ipsam mollitia incidunt suscipit aliquam,
-                pariatur omnis numquam autem porro alias. Earum velit magnam,
-                ratione vero cupiditate omnis, dolorum non reprehenderit modi
-                quaerat ipsum reiciendis doloremque? Obcaecati vero vel rem.
-                Molestiae minima, totam quasi et dolore dolorum tempore odit
-                nihil ipsam voluptatum distinctio repellat harum officia
-                explicabo qui illum quo ipsa autem sequi nesciunt a voluptate
-                voluptatibus modi vero! Dolorem, nulla delectus. Tenetur, soluta
-                molestiae facere magnam amet delectus, illo ea praesentium a
-                sed, vero inventore fuga cumque esse corrupti? Dolore voluptatum
-                nobis omnis commodi, deserunt est dolorem distinctio,
-                exercitationem quisquam alias, eligendi modi illum! Officiis
-                enim sed voluptas officia nam ullam, corrupti fuga, vel, aliquid
-                iste accusamus laudantium recusandae soluta nobis non dicta
-                velit nulla dignissimos at. Pariatur ea similique quae
-                laboriosam? Tempore adipisci quo, temporibus iusto sed
-                cupiditate sunt earum, suscipit, delectus inventore fuga iste
-                aspernatur pariatur! Nihil laudantium sunt possimus, impedit
-                voluptatum incidunt, hic sapiente cumque quis dolore
-                voluptatibus commodi molestias repellat ipsa quasi inventore,
-                architecto illum cum aspernatur ducimus. Quos deleniti, ipsa
-                beatae reprehenderit voluptatum laudantium provident eum
-                voluptatem harum repellat cupiditate, dolore dolores, enim rerum
-                odio laborum! Autem, error iure, dolores explicabo hic eaque,
-                iusto aliquid excepturi dignissimos necessitatibus neque!
-                Distinctio incidunt adipisci nisi. Possimus, quia? Repellendus a
-                illo suscipit cumque saepe sequi, modi delectus illum quaerat?
-                Fuga vero, ab omnis tenetur libero eligendi, iusto cum debitis
-                animi vel cumque aliquid ipsa aut et eum. Rem impedit nulla
-                praesentium nam culpa ratione atque deserunt dolorum commodi
-                amet voluptas architecto est, reprehenderit obcaecati
-                necessitatibus, fugiat nisi quibusdam sed ducimus repellendus a?
-                Nostrum non dignissimos quae, qui vero perferendis eos veritatis
-                quisquam quasi nisi exercitationem, similique tempora fugit quis
-                dolorem possimus aut cumque at nulla, voluptatibus aliquam ea
-                eum ducimus quibusdam. Dolor inventore provident iste quas
-                dolore mollitia suscipit harum, sint, facilis blanditiis
-                asperiores laborum deserunt voluptatum vel!
-              </p>
+
+            <div class="resources mt-[73px]">
+              <h3
+                class="pb-[20px] text-[18px] font-[600] border-b-[1px] border-[rgba(24, 24, 27, 0.05)]"
+              >
+                Resources
+              </h3>
+              <div
+                class="resources-cards mt-[40px] grid grid-cols-4 gap-[20px]"
+              >
+                <a
+                  href="#"
+                  class="resources-card w-[240px] h-[252px] px-[16px] pt-[64px] rounded-[16px]"
+                >
+                  <img
+                    src="./imgs/icons/contact-icon.svg"
+                    class="w-[35px]"
+                    alt=""
+                  />
+                  <h4 class="text-[14px] font-[600] mt-[16px]">Contacts</h4>
+                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                    Learn about the contact model and how to create, retrieve,
+                    update, delete, and list contacts.
+                  </p>
+                </a>
+                <a
+                  href="#"
+                  class="resources-card w-[240px] h-[252px] px-[16px] pt-[64px] rounded-[16px]"
+                >
+                  <img
+                    src="./imgs/icons/message-icon.svg"
+                    class="w-[35px]"
+                    alt=""
+                  />
+                  <h4 class="text-[14px] font-[600] mt-[16px]">
+                    Conversations
+                  </h4>
+                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                    Learn about the conversation model and how to create,
+                    retrieve, update, delete, and list conversations.
+                  </p>
+                </a>
+                <a
+                  href="#"
+                  class="resources-card w-[240px] h-[252px] px-[16px] pt-[64px] rounded-[16px]"
+                >
+                  <img
+                    src="./imgs/icons/mail-icon.svg"
+                    class="w-[35px]"
+                    alt=""
+                  />
+                  <h4 class="text-[14px] font-[600] mt-[16px]">Messages</h4>
+                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                    Learn about the message model and how to create, retrieve,
+                    update, delete, and list messages.
+                  </p>
+                </a>
+                <a
+                  href="#"
+                  class="resources-card w-[240px] h-[252px] px-[16px] pt-[64px] bg-[url(../img/card-bg-img.svg)] bg-cover rounded-[16px]"
+                >
+                  <img
+                    src="./imgs/icons/group-icon.svg"
+                    class="w-[35px]"
+                    alt=""
+                  />
+                  <h4 class="text-[14px] font-[600] mt-[16px]">Groups</h4>
+                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                    Learn about the group model and how to create, retrieve,
+                    update, delete, and list groups.
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div
+              class="question flex items-center gap-[20px] pt-[68px] pb-[41px]"
+            >
+              <p class="text-[#52525B] text-[14px]">Was this page helpful?</p>
+              <div class="buttons flex">
+                <button
+                  class="w-[46px] h-[30px] border-[1px] rounded-l-full text-[#52525B] text-center font-[Roboto] text-[14px] not-italic font-medium leading-[24px]"
+                >
+                  Yes
+                </button>
+                <button
+                  class="w-[46px] h-[30px] border-[1px] rounded-r-full text-[#52525B] text-center font-[Roboto] text-[14px]"
+                >
+                  No
+                </button>
+              </div>
             </div>
           </div>
         </div>
+        <footer class="max-w-[1056px] mx-auto">
+          <div class="next float-right">
+            <button
+              class="flex items-center px-[12px] py-[6px] rounded-full bg-[#F4F4F5] text-[13px] mb-[12px]"
+            >
+              Next<svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+              >
+                <path
+                  d="M11.5 6.5L14.5 10M14.5 10L11.5 13.5M14.5 10H5.5"
+                  stroke="#18181B"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <a
+              href="#"
+              class="next-page-name text-[#18181B] text-[16px] font-[600]"
+              >Quickstart</a
+            >
+          </div>
+        </footer>
       </div>
     </main>
     <script src="./js/script.js"></script>
