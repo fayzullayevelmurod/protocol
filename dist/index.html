@@ -14,48 +14,157 @@
         background-position-y: -100px;
         background-position-x: -50px;
         border-radius: 16px;
-        box-shadow: 0px 0px 0px 1px rgba(24, 24, 27, 0.08) inset,
-          0px 0px 0px 0px #fff inset;
+        border: 1px solid #e9e9e9;
       }
     </style>
   </head>
-  <body>
-    <main class="grid grid-cols-[320px_auto] font-['Roboto']">
-      <div class="sidebar scroll-smooth">
+  <body class="dark:bg-[#18181B]">
+    <main
+      class="grid grid-cols-[320px_auto] font-['Roboto'] max-[1280px]:grid-cols-[290px_auto]"
+    >
+      <div class="sidebar">
         <div
-          class="sidebar-wrapper fixed w-[320px] h-[100%] top-0 bottom-0 left-0 bg-white border-r-[1px] border-[rgba(24, 24, 27, 0.08)] px-4 py-4"
+          class="sidebar-wrapper fixed w-[320px] h-[100%] top-0 bottom-0 left-0 bg-white dark:bg-[#18181B] border-r-[1px] border-[rgba(24, 24, 27, 0.08)] dark:border-[#303032] px-[24px] py-[16px] overflow-y-auto max-[1280px]:w-[290px]"
         >
           <div class="logo">
-            <img
-              src="./imgs/protocol-logo.svg"
-              alt=""
-              class="max-w-full h-auto"
-            />
+            <svg
+              width="99"
+              height="24"
+              viewBox="0 0 99 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_6_191)">
+                <path
+                  d="M16 8C16 6.67392 15.4732 5.40215 14.5355 4.46447C13.5979 3.52678 12.3261 3 11 3H5C3.67392 3 2.40215 3.52678 1.46447 4.46447C0.526784 5.40215 0 6.67392 0 8L0 21.927C4.17376e-05 22.1152 0.0531705 22.2995 0.153281 22.4588C0.253391 22.6181 0.396421 22.746 0.565934 22.8277C0.735447 22.9093 0.924564 22.9415 1.11155 22.9205C1.29854 22.8995 1.47581 22.8262 1.623 22.709L5.307 19.779C6.01476 19.2158 6.89251 18.9091 7.797 18.909H11C12.3261 18.909 13.5979 18.3822 14.5355 17.4445C15.4732 16.5069 16 15.2351 16 13.909V8Z"
+                  fill="#34D399"
+                />
+                <path
+                  d="M26.5381 18H29.1921V14.001H31.7681C34.4401 14.001 36.2241 12.278 36.2241 9.66805V9.65005C36.2241 7.04005 34.4401 5.31705 31.7681 5.31705H26.5381V18ZM31.1181 7.41805C32.6381 7.41805 33.5341 8.21805 33.5341 9.65905V9.67705C33.5341 11.118 32.6381 11.927 31.1171 11.927H29.1921V7.41805H31.1181ZM38.0511 18H40.6171V12.586C40.6171 11.215 41.5401 10.38 42.9991 10.38C43.3951 10.38 43.7901 10.441 44.1771 10.53V8.28705C43.8642 8.20592 43.5423 8.16459 43.2191 8.16405C41.9621 8.16405 41.0831 8.77905 40.7761 9.82505H40.6171V8.32305H38.0511V18ZM49.6011 18.202C52.5801 18.202 54.3731 16.322 54.3731 13.166V13.148C54.3731 10.02 52.5531 8.11205 49.6001 8.11205C46.6471 8.11205 44.8281 10.028 44.8281 13.148V13.166C44.8281 16.312 46.6211 18.202 49.6001 18.202H49.6011ZM49.6011 16.189C48.2291 16.189 47.4561 15.073 47.4561 13.166V13.148C47.4561 11.258 48.2381 10.125 49.6001 10.125C50.9541 10.125 51.7451 11.259 51.7451 13.148V13.166C51.7451 15.073 50.9631 16.189 49.6001 16.189H49.6011ZM60.1211 18.035C60.6131 18.035 61.0881 17.982 61.4041 17.921V16.014C61.1536 16.0444 60.9014 16.0591 60.6491 16.058C59.7791 16.058 59.4091 15.671 59.4091 14.801V10.257H61.4041V8.32305H59.4101V6.01205H56.8181V8.32305H55.3231V10.257H56.8181V15.39C56.8181 17.27 57.7661 18.035 60.1211 18.035ZM67.4081 18.202C70.3881 18.202 72.1801 16.322 72.1801 13.166V13.148C72.1801 10.02 70.3601 8.11205 67.4081 8.11205C64.4541 8.11205 62.6351 10.028 62.6351 13.148V13.166C62.6351 16.312 64.4281 18.202 67.4081 18.202ZM67.4081 16.189C66.0361 16.189 65.2631 15.073 65.2631 13.166V13.148C65.2631 11.258 66.0451 10.125 67.4081 10.125C68.7611 10.125 69.5521 11.259 69.5521 13.148V13.166C69.5521 15.073 68.7701 16.189 67.4081 16.189ZM78.1751 18.202C80.6971 18.202 82.2091 16.849 82.4721 14.739L82.4821 14.686H80.1081L80.0911 14.722C79.8621 15.688 79.2381 16.189 78.1831 16.189C76.8131 16.189 76.0481 15.109 76.0481 13.149V13.131C76.0481 11.197 76.8031 10.125 78.1831 10.125C79.2821 10.125 79.9231 10.74 80.0911 11.681L80.0991 11.698H82.4901V11.672C82.2621 9.51005 80.7411 8.11205 78.1751 8.11205C75.1421 8.11205 73.4371 9.94905 73.4371 13.131V13.148C73.4371 16.365 75.1511 18.202 78.1751 18.202ZM88.4321 18.202C91.4121 18.202 93.2041 16.322 93.2041 13.166V13.148C93.2041 10.02 91.3841 8.11205 88.4321 8.11205C85.4791 8.11205 83.6591 10.028 83.6591 13.148V13.166C83.6591 16.312 85.4521 18.202 88.4321 18.202ZM88.4321 16.189C87.0611 16.189 86.2871 15.073 86.2871 13.166V13.148C86.2871 11.258 87.0691 10.125 88.4321 10.125C89.7851 10.125 90.5761 11.259 90.5761 13.148V13.166C90.5761 15.073 89.7941 16.189 88.4321 16.189ZM95.0251 18H97.5911V4.62305H95.0251V18Z"
+                  fill="#18181B"
+                  class="dark:fill-[#ffff]"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_6_191">
+                  <rect width="99" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
           </div>
-          <h1 class="mt-10 font-semibold text-[#18181B]">Guides</h1>
-          <div class="sidebar-content mt-[12px]">
-            <ul>
-              <li class="mb-2">
-                <a
-                  href="#"
-                  class="accordion-trigger cursor-pointer flex items-center justify-between px-2 py-1 rounded-md hover:bg-gray-200"
-                >
+          <div class="sidebar-content dark:text-[#fff]">
+            <h1 class="mt-10 font-bold text-[#18181B] text-[13px]">Guides</h1>
+            <ul class="sidebar-ul mt-[12px] ml-[7px]">
+              <li
+                class="mb-2 cursor-pointer flex items-start justify-between flex-col py-1 rounded-md hover:bg-[#FAFAFA] transition-all"
+              >
+                <a href="#" class="accordion-trigger text-[14px] font-[350]">
                   Introduction
                 </a>
-                <div class="accordion-content hidden pl-2">
-                  <p class="ml-7 mt-2 text-[#52525B]">Guides</p>
-                  <p class="ml-7 mt-2 text-[#52525B]">Resources</p>
-                </div>
+                <ul class="accordion-links hidden pl-2">
+                  <li>
+                    <a
+                      href="#"
+                      class="ml-7 mt-2 text-[#52525B] text-[13px] font-[400]"
+                    >
+                      Guides
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="ml-7 mt-2 text-[#52525B] text-[13px] font-[400]"
+                    >
+                      Resources
+                    </a>
+                  </li>
+                </ul>
               </li>
-              <li class="mb-2">
-                <a
-                  href="#"
-                  class="accordion-trigger cursor-pointer flex items-center justify-between px-2 py-1 rounded-md hover:bg-gray-200"
-                >
-                  Guides
+              <li
+                class="mb-2 cursor-pointer flex items-start justify-between flex-col py-1 rounded-md hover:bg-[#FAFAFA] transition-all"
+              >
+                <a href="#" class="accordion-trigger text-[14px] font-[350]">
+                  Quickstart
                 </a>
                 <div class="accordion-content hidden pl-2">
-                  <p>Guides content goes here.</p>
+                  <p class="ml-7 mt-2 text-[#52525B] text-[13px] font-[400]">
+                    Guides
+                  </p>
+                  <p class="ml-7 mt-2 text-[#52525B] text-[13px] font-[400]">
+                    Resources
+                  </p>
+                </div>
+              </li>
+              <li
+                class="mb-2 cursor-pointer flex items-start justify-between flex-col py-1 rounded-md hover:bg-[#FAFAFA] transition-all"
+              >
+                <a href="#" class="accordion-trigger text-[14px] font-[350]">
+                  SDKs
+                </a>
+                <div class="accordion-content hidden pl-2">
+                  <p class="ml-7 mt-2 text-[#52525B] text-[13px] font-[400]">
+                    Guides
+                  </p>
+                  <p class="ml-7 mt-2 text-[#52525B] text-[13px] font-[400]">
+                    Resources
+                  </p>
+                </div>
+              </li>
+              <li
+                class="mb-2 cursor-pointer flex items-start justify-between flex-col py-1 rounded-md hover:bg-[#FAFAFA] transition-all"
+              >
+                <a href="#" class="accordion-trigger text-[14px] font-[350]">
+                  Authentication
+                </a>
+                <div class="accordion-content hidden pl-2">
+                  <p class="ml-7 mt-2 text-[#52525B] text-[13px] font-[400]">
+                    Guides
+                  </p>
+                  <p class="ml-7 mt-2 text-[#52525B] text-[13px] font-[400]">
+                    Resources
+                  </p>
+                </div>
+              </li>
+              <li
+                class="mb-2 cursor-pointer flex items-start justify-between flex-col py-1 rounded-md hover:bg-[#FAFAFA] transition-all"
+              >
+                <a href="#" class="accordion-trigger text-[14px] font-[350]">
+                  Pagination
+                </a>
+                <div class="accordion-content hidden pl-2">
+                  <p class="ml-7 mt-2 text-[#52525B] text-[13px] font-[400]">
+                    Guides
+                  </p>
+                  <p class="ml-7 mt-2 text-[#52525B] text-[13px] font-[400]">
+                    Resources
+                  </p>
+                </div>
+              </li>
+
+              <li
+                class="mb-2 cursor-pointer flex items-start justify-between flex-col py-1 rounded-md hover:bg-[#FAFAFA] transition-all"
+              >
+                <a href="#" class="accordion-trigger text-[14px] font-[350]">
+                  Errors
+                </a>
+                <div class="accordion-content hidden pl-2">
+                  <p class="ml-7 mt-2 text-[#52525B] text-[13px] font-[400]">
+                    Guides
+                  </p>
+                  <p class="ml-7 mt-2 text-[#52525B] text-[13px] font-[400]">
+                    Resources
+                  </p>
+                </div>
+              </li>
+              <li
+                class="mb-2 cursor-pointer flex items-start justify-between flex-col py-1 rounded-md hover:bg-[#FAFAFA] transition-all"
+              >
+                <a href="#" class="accordion-trigger text-[14px] font-[350]">
+                  Webhooks
+                </a>
+                <div class="accordion-content hidden pl-2">
+                  <p class="ml-7 mt-2 text-[#52525B] text-[14px]">Guides</p>
+                  <p class="ml-7 mt-2 text-[#52525B] text-[14px]">Resources</p>
                 </div>
               </li>
             </ul>
@@ -65,10 +174,36 @@
 
       <div class="right w-[100%]">
         <header
-          class="sticky top-0 right-0 flex items-center justify-between w-[100%] h-[60px] px-[32px] leading-[28px] backdrop-filter backdrop-blur-[2px] border-b-[1px] border-[rgba(24, 24, 27, 0.08)] bg-[rgba(255,_255,_255,_0.5)]"
+          class="sticky top-0 right-0 flex items-center justify-between w-[100%] h-[60px] px-[32px] leading-[28px] backdrop-filter backdrop-blur-[2px] border-b-[1px] border-[rgba(24, 24, 27, 0.08)] dark:border-[#303032] dark:bg-[#18181b33] bg-[rgba(255,_255,_255,_0.5)]"
         >
+          <div class="logo hidden max-[1024px]:block">
+            <svg
+              width="99"
+              height="24"
+              viewBox="0 0 99 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_6_191)">
+                <path
+                  d="M16 8C16 6.67392 15.4732 5.40215 14.5355 4.46447C13.5979 3.52678 12.3261 3 11 3H5C3.67392 3 2.40215 3.52678 1.46447 4.46447C0.526784 5.40215 0 6.67392 0 8L0 21.927C4.17376e-05 22.1152 0.0531705 22.2995 0.153281 22.4588C0.253391 22.6181 0.396421 22.746 0.565934 22.8277C0.735447 22.9093 0.924564 22.9415 1.11155 22.9205C1.29854 22.8995 1.47581 22.8262 1.623 22.709L5.307 19.779C6.01476 19.2158 6.89251 18.9091 7.797 18.909H11C12.3261 18.909 13.5979 18.3822 14.5355 17.4445C15.4732 16.5069 16 15.2351 16 13.909V8Z"
+                  fill="#34D399"
+                />
+                <path
+                  d="M26.5381 18H29.1921V14.001H31.7681C34.4401 14.001 36.2241 12.278 36.2241 9.66805V9.65005C36.2241 7.04005 34.4401 5.31705 31.7681 5.31705H26.5381V18ZM31.1181 7.41805C32.6381 7.41805 33.5341 8.21805 33.5341 9.65905V9.67705C33.5341 11.118 32.6381 11.927 31.1171 11.927H29.1921V7.41805H31.1181ZM38.0511 18H40.6171V12.586C40.6171 11.215 41.5401 10.38 42.9991 10.38C43.3951 10.38 43.7901 10.441 44.1771 10.53V8.28705C43.8642 8.20592 43.5423 8.16459 43.2191 8.16405C41.9621 8.16405 41.0831 8.77905 40.7761 9.82505H40.6171V8.32305H38.0511V18ZM49.6011 18.202C52.5801 18.202 54.3731 16.322 54.3731 13.166V13.148C54.3731 10.02 52.5531 8.11205 49.6001 8.11205C46.6471 8.11205 44.8281 10.028 44.8281 13.148V13.166C44.8281 16.312 46.6211 18.202 49.6001 18.202H49.6011ZM49.6011 16.189C48.2291 16.189 47.4561 15.073 47.4561 13.166V13.148C47.4561 11.258 48.2381 10.125 49.6001 10.125C50.9541 10.125 51.7451 11.259 51.7451 13.148V13.166C51.7451 15.073 50.9631 16.189 49.6001 16.189H49.6011ZM60.1211 18.035C60.6131 18.035 61.0881 17.982 61.4041 17.921V16.014C61.1536 16.0444 60.9014 16.0591 60.6491 16.058C59.7791 16.058 59.4091 15.671 59.4091 14.801V10.257H61.4041V8.32305H59.4101V6.01205H56.8181V8.32305H55.3231V10.257H56.8181V15.39C56.8181 17.27 57.7661 18.035 60.1211 18.035ZM67.4081 18.202C70.3881 18.202 72.1801 16.322 72.1801 13.166V13.148C72.1801 10.02 70.3601 8.11205 67.4081 8.11205C64.4541 8.11205 62.6351 10.028 62.6351 13.148V13.166C62.6351 16.312 64.4281 18.202 67.4081 18.202ZM67.4081 16.189C66.0361 16.189 65.2631 15.073 65.2631 13.166V13.148C65.2631 11.258 66.0451 10.125 67.4081 10.125C68.7611 10.125 69.5521 11.259 69.5521 13.148V13.166C69.5521 15.073 68.7701 16.189 67.4081 16.189ZM78.1751 18.202C80.6971 18.202 82.2091 16.849 82.4721 14.739L82.4821 14.686H80.1081L80.0911 14.722C79.8621 15.688 79.2381 16.189 78.1831 16.189C76.8131 16.189 76.0481 15.109 76.0481 13.149V13.131C76.0481 11.197 76.8031 10.125 78.1831 10.125C79.2821 10.125 79.9231 10.74 80.0911 11.681L80.0991 11.698H82.4901V11.672C82.2621 9.51005 80.7411 8.11205 78.1751 8.11205C75.1421 8.11205 73.4371 9.94905 73.4371 13.131V13.148C73.4371 16.365 75.1511 18.202 78.1751 18.202ZM88.4321 18.202C91.4121 18.202 93.2041 16.322 93.2041 13.166V13.148C93.2041 10.02 91.3841 8.11205 88.4321 8.11205C85.4791 8.11205 83.6591 10.028 83.6591 13.148V13.166C83.6591 16.312 85.4521 18.202 88.4321 18.202ZM88.4321 16.189C87.0611 16.189 86.2871 15.073 86.2871 13.166V13.148C86.2871 11.258 87.0691 10.125 88.4321 10.125C89.7851 10.125 90.5761 11.259 90.5761 13.148V13.166C90.5761 15.073 89.7941 16.189 88.4321 16.189ZM95.0251 18H97.5911V4.62305H95.0251V18Z"
+                  fill="#18181B"
+                  class="dark:fill-[#ffff]"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_6_191">
+                  <rect width="99" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
           <div
-            class="search-bar w-[448px] h-[33px] flex items-center px-[11px] bg-[white] rounded-full border-[1px] border-[solid] border-[#e8e8e9]"
+            class="search-bar w-[448px] h-[33px] flex items-center px-[11px] bg-[white] rounded-full border-[1px] border-[solid] border-[#e8e8e9] dark:bg-[#ffffff0d] dark:border-[#434D49] max-[1280px]:w-[50%] max-[1280px]:mr-[50px] max-[1024px]:hidden"
           >
             <img
               src="./imgs/icons/search-icon.svg"
@@ -78,7 +213,7 @@
             <input
               type="text"
               placeholder="Find something..."
-              class="w-[90%] text-[14px] pr-[30px] outline-none placeholder:Roboto placeholder:text-[13.9px] text-[#71717A]"
+              class="w-[90%] text-[14px] pr-[30px] outline-none placeholder:Roboto placeholder:text-[13.9px] text-[#71717A] bg-transparent"
             />
             <span
               class="text-[12px] text-[#A1A1AA] font-[400] whitespace-nowrap"
@@ -87,22 +222,42 @@
           </div>
           <div class="right-items flex items-center">
             <ul
-              class="header-links flex items-center mr-[13px] text-[14px] text-[#52525B] font-[400] gap-[30px] border-r-[1px] border-[rgba(24, 24, 27, 0.1)] after:content-[''] after:border"
+              class="header-links flex items-center mr-[20px] text-[14px] text-[#52525B] font-[400] gap-[30px] border-r-[2px] border-[rgba(24, 24, 27, 0.1)] after:content-[''] dark:text-[#a1a1aa] dark:border-[#464A44]"
             >
               <li><a href="#">API</a></li>
               <li><a href="#">Documentation</a></li>
               <li><a href="#">Support</a></li>
             </ul>
-            <div class="header-buttons flex items-center gap-[21px]">
-              <div class="light hover:bg-[#F3F3F3] cursor-pointer">
-                <img
-                  src="./imgs/icons/light-icon.svg"
-                  alt=""
+            <div class="header-buttons flex items-center gap-[18px]">
+              <div class="search-icon w-[20px] hidden max-[1024px]:block">
+                <img src="./imgs/icons/search-icon.svg" alt="" />
+              </div>
+              <div
+                class="light hover:bg-[#F3F3F3] cursor-pointer dark:hover:bg-[#464A44] rounded-[5px]"
+              >
+                <svg
                   class="w-[20px] h-[20px]"
-                />
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12.75 10C12.75 10.663 12.4866 11.2989 12.0178 11.7678C11.5489 12.2366 10.913 12.5 10.25 12.5C9.58696 12.5 8.95107 12.2366 8.48223 11.7678C8.01339 11.2989 7.75 10.663 7.75 10C7.75 9.33696 8.01339 8.70107 8.48223 8.23223C8.95107 7.76339 9.58696 7.5 10.25 7.5C10.913 7.5 11.5489 7.76339 12.0178 8.23223C12.4866 8.70107 12.75 9.33696 12.75 10Z"
+                    stroke="#18181B"
+                    class="dark:stroke-[#a1a1aa]"
+                  />
+                  <path
+                    d="M10.25 5.5V4.5M13.432 6.818L14.139 6.111M14.75 10H15.75M13.432 13.182L14.139 13.889M10.25 15.5V14.5M6.36 13.889L7.068 13.182M4.75 10H5.75M6.36 6.111L7.068 6.818"
+                    stroke="#18181B"
+                    stroke-linecap="round"
+                    class="dark:stroke-[#a1a1aa]"
+                  />
+                </svg>
               </div>
               <button
-                class="px-[12px] h-[32px] bg-[#18181B] text-[white] text-[14px] rounded-[9999px]"
+                class="px-[12px] h-[32px] whitespace-nowrap bg-[#18181B] text-[white] text-[14px] rounded-[9999px] dark:bg-[#34d3991a] dark:border-[1px] dark:border-[#204D3F] dark:text-[#34d399]"
               >
                 Sign in
               </button>
@@ -110,37 +265,56 @@
           </div>
         </header>
         <div
-          class="content max-w-[1280px] px-[2rem] -mt-[60px] mx-auto bg-[url(./imgs/home-bg-2.png)] bg-no-repeat bg-[center_top_1px]"
+          class="content max-w-[1280px] px-[2rem] -mt-[60px] mx-auto bg-[url(./imgs/home-bg.png)] bg-no-repeat bg-[center_top_-50px]"
         >
-          <div class="home pt-[120px] max-w-[1056px] mx-auto">
+          <div
+            class="home pt-[120px] max-w-[1056px] mx-auto max-[1280px]:max-w-[800px] max-[1280px]:mx-0"
+          >
             <div class="home-text max-w-[793px]">
-              <h2 class="text-[24px] text-[#18181B] font-[700]">
+              <h2 class="text-[24px] text-[#18181B] font-[700] dark:text-white">
                 API Documentation
               </h2>
-              <p class="text-[15px] font-[400] text-[#3F3F46] mt-[14px]">
+              <p
+                class="text-[15px] font-[400] text-[#3F3F46] mt-[14px] dark:text-[#a1a1aa]"
+              >
                 Use the Protocol API to access contacts, conversations, group
                 messages, and more and seamlessly integrate your product into
                 the workflows of dozens of devoted Protocol users.
               </p>
               <div class="buttons mt-[30px] flex items-center gap-[12px]">
                 <button
-                  class="px-[12px] h-[32px] flex items-center bg-[#18181B] text-[white] text-[14px] font-[500] rounded-[9999px]"
+                  class="px-[12px] h-[32px] flex items-center bg-[#18181B] text-[white] text-[14px] font-[500] rounded-[9999px] dark:bg-[#34d3991a] dark:border-[1px] dark:border-[#204D3F] dark:text-[#34d399]"
                 >
                   Quickstart
-                  <img
-                    src="./imgs/icons/right-icon.svg"
+                  <svg
                     class="ml-[7px]"
-                    alt=""
-                  />
+                    width="11"
+                    height="8"
+                    viewBox="0 0 11 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 0.5L10 4M10 4L7 7.5M10 4H1"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="dark:stroke-[#34d399]"
+                    />
+                  </svg>
                 </button>
                 <button
-                  class="px-[12px] h-[32px] text-[14px] font-[500] rounded-[9999px] border-[1px] border-[#C8DCD6]"
+                  class="px-[12px] h-[32px] text-[14px] font-[500] rounded-[9999px] border-[1px] border-[#C8DCD6] dark:text-[#a1a1aa] dark:border-[#303234]"
                 >
                   Explore SDKs
                 </button>
               </div>
-              <h3 class="mt-[64px] text-[18px] font-[600]">Getting started</h3>
-              <p class="mt-[14px] text-[15px] font-[400] leading-[28px]">
+              <h3 class="mt-[64px] text-[18px] font-[600] dark:text-white">
+                Getting started
+              </h3>
+              <p
+                class="mt-[14px] text-[15px] font-[400] leading-[28px] dark:text-[#a1a1aa]"
+              >
                 To get started, create a new application in your
                 <a href="#" class="text-[#10B981]">developer settings</a>, then
                 read about how to make requests for the resources you need to
@@ -171,14 +345,20 @@
             </div>
             <div class="guides mt-[73px]">
               <h3
-                class="pb-[20px] text-[18px] font-[600] border-b-[1px] border-[rgba(24, 24, 27, 0.05)]"
+                class="pb-[20px] text-[17px] font-[600] border-b-[1px] border-[rgba(24, 24, 27, 0.05)] dark:text-white dark:border-[#303032]"
               >
                 Guides
               </h3>
-              <div class="cards mt-[40px] grid grid-cols-4 gap-[20px]">
+              <div
+                class="cards mt-[40px] grid grid-cols-4 gap-[20px] max-[1280px]:grid-cols-2"
+              >
                 <div class="card">
-                  <h4 class="text-[14px] font-[600]">Authentication</h4>
-                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                  <h4 class="text-[14px] font-[600] dark:text-white">
+                    Authentication
+                  </h4>
+                  <p
+                    class="mt-[9px] text-[13.9px] font-[400] max-w-[200px] dark:text-[#a1a1aa] max-[1280px]:max-w-[100%]"
+                  >
                     Learn how to authenticate your API requests.
                   </p>
                   <a
@@ -202,8 +382,12 @@
                   ></a>
                 </div>
                 <div class="card">
-                  <h4 class="text-[14px] font-[600]">Pagination</h4>
-                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                  <h4 class="text-[14px] font-[600] dark:text-white">
+                    Pagination
+                  </h4>
+                  <p
+                    class="mt-[9px] text-[13.9px] font-[400] max-w-[200px] dark:text-[#a1a1aa] max-[1280px]:max-w-[100%]"
+                  >
                     Understand how to work with paginated responses.
                   </p>
                   <a
@@ -227,8 +411,10 @@
                   ></a>
                 </div>
                 <div class="card">
-                  <h4 class="text-[14px] font-[600]">Errors</h4>
-                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                  <h4 class="text-[14px] font-[600] dark:text-white">Errors</h4>
+                  <p
+                    class="mt-[9px] text-[13.9px] font-[400] max-w-[200px] dark:text-[#a1a1aa] max-[1280px]:max-w-[100%]"
+                  >
                     Read about the different types of errors returned by the
                     API.
                   </p>
@@ -253,8 +439,12 @@
                   ></a>
                 </div>
                 <div class="card">
-                  <h4 class="text-[14px] font-[600]">Webhooks</h4>
-                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                  <h4 class="text-[14px] font-[600] dark:text-white">
+                    Webhooks
+                  </h4>
+                  <p
+                    class="mt-[9px] text-[13.9px] font-[400] max-w-[200px] dark:text-[#a1a1aa] max-[1280px]:max-w-[100%]"
+                  >
                     Learn how to programmatically configure webhooks for your
                     app.
                   </p>
@@ -283,71 +473,85 @@
 
             <div class="resources mt-[73px]">
               <h3
-                class="pb-[20px] text-[18px] font-[600] border-b-[1px] border-[rgba(24, 24, 27, 0.05)]"
+                class="pb-[20px] text-[18px] font-[600] border-b-[1px] border-[rgba(24, 24, 27, 0.05)] dark:border-[#303032] dark:text-white"
               >
                 Resources
               </h3>
               <div
-                class="resources-cards mt-[40px] grid grid-cols-4 gap-[20px]"
+                class="resources-cards mt-[40px] grid grid-cols-4 gap-[30px] max-[1280px]:grid-cols-2"
               >
                 <a
                   href="#"
-                  class="resources-card w-[240px] h-[252px] px-[16px] pt-[64px] rounded-[16px]"
+                  class="resources-card w-[100%] h-[252px] px-[16px] pt-[64px] dark:border-[#343437] pb-[15px] rounded-[16px] max-[1280px]:h-auto max-[1280px]:pt-[60px] dark:bg-[#1D1D20]"
                 >
                   <img
                     src="./imgs/icons/contact-icon.svg"
-                    class="w-[35px]"
+                    class="border-[1px] dark:border-[#3F3F41] rounded-full"
                     alt=""
                   />
-                  <h4 class="text-[14px] font-[600] mt-[16px]">Contacts</h4>
-                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                  <h4 class="text-[14px] font-[600] mt-[16px] dark:text-white">
+                    Contacts
+                  </h4>
+                  <p
+                    class="mt-[9px] text-[13.9px] font-[400] max-w-[200px] max-[1280px]:max-w-[100%] dark:text-[#a1a1aa]"
+                  >
                     Learn about the contact model and how to create, retrieve,
                     update, delete, and list contacts.
                   </p>
                 </a>
                 <a
                   href="#"
-                  class="resources-card w-[240px] h-[252px] px-[16px] pt-[64px] rounded-[16px]"
+                  class="resources-card w-[100%] h-[252px] px-[16px] pt-[64px] dark:border-[#343437] pb-[15px] rounded-[16px] max-[1280px]:h-auto max-[1280px]:pt-[60px] dark:bg-[#1D1D20]"
                 >
                   <img
                     src="./imgs/icons/message-icon.svg"
-                    class="w-[35px]"
+                    class="border-[1px] dark:border-[#3F3F41] rounded-full"
                     alt=""
                   />
-                  <h4 class="text-[14px] font-[600] mt-[16px]">
+                  <h4 class="text-[14px] font-[600] mt-[16px] dark:text-white">
                     Conversations
                   </h4>
-                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                  <p
+                    class="mt-[9px] text-[13.9px] font-[400] max-w-[200px] max-[1280px]:max-w-[100%] dark:text-[#a1a1aa]"
+                  >
                     Learn about the conversation model and how to create,
                     retrieve, update, delete, and list conversations.
                   </p>
                 </a>
                 <a
                   href="#"
-                  class="resources-card w-[240px] h-[252px] px-[16px] pt-[64px] rounded-[16px]"
+                  class="resources-card w-[100%] h-[252px] px-[16px] pt-[64px] dark:border-[#343437] pb-[15px] rounded-[16px] max-[1280px]:h-auto max-[1280px]:pt-[60px] dark:bg-[#1D1D20]"
                 >
                   <img
                     src="./imgs/icons/mail-icon.svg"
-                    class="w-[35px]"
+                    class="border-[1px] dark:border-[#3F3F41] rounded-full"
                     alt=""
                   />
-                  <h4 class="text-[14px] font-[600] mt-[16px]">Messages</h4>
-                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                  <h4 class="text-[14px] font-[600] mt-[16px] dark:text-white">
+                    Messages
+                  </h4>
+                  <p
+                    class="mt-[9px] text-[13.9px] font-[400] max-w-[200px] max-[1280px]:max-w-[100%] dark:text-[#a1a1aa] dark:border-[#343437]"
+                  >
                     Learn about the message model and how to create, retrieve,
                     update, delete, and list messages.
                   </p>
                 </a>
                 <a
                   href="#"
-                  class="resources-card w-[240px] h-[252px] px-[16px] pt-[64px] bg-[url(../img/card-bg-img.svg)] bg-cover rounded-[16px]"
+                  class="resources-card w-[100%] h-[252px] px-[16px] pt-[64px] dark:border-[#343437] pb-[15px] rounded-[16px] max-[1280px]:h-auto max-[1280px]:pt-[60px] dark:bg-[#1D1D20]"
                 >
                   <img
                     src="./imgs/icons/group-icon.svg"
-                    class="w-[35px]"
+                    class="border-[1px] dark:border-[#3F3F41] rounded-full"
                     alt=""
                   />
-                  <h4 class="text-[14px] font-[600] mt-[16px]">Groups</h4>
-                  <p class="mt-[9px] text-[13.9px] font-[400] max-w-[200px]">
+                  <h4 class="text-[14px] font-[600] mt-[16px] dark:text-white">
+                    Groups
+                  </h4>
+                  <p
+                    class="mt-[9px] text-[13.9px] font-[400] max-w-[200px] max-[1280px]:max-w-[100%] dark:text-[#a1a1aa]"
+                  >
                     Learn about the group model and how to create, retrieve,
                     update, delete, and list groups.
                   </p>
@@ -357,15 +561,17 @@
             <div
               class="question flex items-center gap-[20px] pt-[68px] pb-[41px]"
             >
-              <p class="text-[#52525B] text-[14px]">Was this page helpful?</p>
+              <p class="text-[#52525B] text-[14px] dark:text-[#a1a1aa]">
+                Was this page helpful?
+              </p>
               <div class="buttons flex">
                 <button
-                  class="w-[46px] h-[30px] border-[1px] rounded-l-full text-[#52525B] text-center font-[Roboto] text-[14px] not-italic font-medium leading-[24px]"
+                  class="w-[46px] h-[30px] border-[1px] rounded-l-full text-[#52525B] text-center font-[Roboto] text-[14px] not-italic font-medium leading-[24px] dark:text-[#a1a1aa] dark:border-[#303032]"
                 >
                   Yes
                 </button>
                 <button
-                  class="w-[46px] h-[30px] border-[1px] rounded-r-full text-[#52525B] text-center font-[Roboto] text-[14px]"
+                  class="w-[46px] h-[30px] border-[1px] rounded-r-full text-[#52525B] text-center font-[Roboto] text-[14px] dark:text-[#a1a1aa] dark:border-[#303032]"
                 >
                   No
                 </button>
@@ -377,20 +583,21 @@
             <div class="next w-[100%] mb-[40px]">
               <div class="next-button flex justify-end">
                 <button
-                  class="flex items-center px-[12px] py-[6px] rounded-full bg-[#F4F4F5] text-[13px] mb-[12px]"
+                  class="flex items-center px-[12px] py-[6px] rounded-full bg-[#F4F4F5] text-[13px] mb-[12px] dark:border-[1px] dark:border-[#303032] dark:bg-[#1E1E21] dark:text-[#a1a1aa]"
                 >
                   Next<svg
+                    class="my-svg"
                     xmlns="http://www.w3.org/2000/svg"
                     width="20"
                     height="20"
                     viewBox="0 0 20 20"
-                    fill="none"
                   >
                     <path
                       d="M11.5 6.5L14.5 10M14.5 10L11.5 13.5M14.5 10H5.5"
                       stroke="#18181B"
                       stroke-linecap="round"
                       stroke-linejoin="round"
+                      class="dark:stroke-[#a1a1aa]"
                     />
                   </svg>
                 </button>
@@ -402,9 +609,11 @@
               </div>
             </div>
             <div
-              class="footer-bottom flex items-center justify-between pt-[33px] pb-[64px] border-t-[1px]"
+              class="footer-bottom flex items-center justify-between pt-[33px] pb-[64px] border-t-[1px] border-t-[rgba(24, 24, 27, 0.05)] dark:border-[#303032]"
             >
-              <p>© Copyright 2023. All rights reserved.</p>
+              <p class="text-[13px] text-[#52525B] dark:text-[#a1a1aa]">
+                © Copyright 2023. All rights reserved.
+              </p>
               <div class="footer-icon-links flex items-center gap-[20px]">
                 <a href="#"
                   ><img src="./imgs/icons/twitter-icon.svg" alt=""

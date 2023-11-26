@@ -1,0 +1,37 @@
+.sidebar-ul {
+  border-left: 1px solid #18181b1a;
+}
+
+.accordion-trigger:nth-child(1) {
+  padding-left: 15px;
+  border-left: 1px solid #10b981;
+}
+
+.header-links {
+  line-height: 20px;
+}
+@media (max-width: 1024px) {
+  .sidebar-wrapper {
+    left: -100%;
+  }
+  main {
+    grid-template-columns: 0 auto !important;
+  }
+  .home {
+    /* max-width: 768px; */
+    margin: 0 auto;
+  }
+}
+.light {
+  width: 20px;
+}
+.light img {
+  width: 20px;
+  height: 20px;
+}
+
+.display-none {
+  @apply hidden;
+}
+/* .my-svg path {
+  stroke: #ff0000; /* Qizil rang */
